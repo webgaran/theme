@@ -1,0 +1,878 @@
+/*
+Theme Name: Webgaran Theme
+Theme URI: http://webgaran.ir
+Author: webgaran
+Author URI: http://webgaran.ir
+Description: This is an awesome theme for Webgaran Site
+Version: 3.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, white, responsive, one-column, two-columns, featured-images, custom-menu, custom-header, post-formats
+*/
+/*=======================================================================
+	Topbar CSS
+=======================================================================*/
+#topbar {
+	background: #28353d;
+}
+#topbar ul li {
+	display: inline-block;
+	margin-left: 12px;
+}
+#topbar a {
+	color: #aeb6b8;
+	font-size: 12px;
+}
+#topbar a:hover {
+	color: #fff;
+}
+/*=======================================================================
+	Mainbar CSS
+=======================================================================*/
+#mainbar .logo img {
+	width: 60px;
+	float: right;
+	margin: 2px 6px;
+}
+#mainbar .logo p a {
+	color: #191a3b;
+	font-weight: 500;
+	font-size: 26px;
+	margin-top: 14px;
+	display: block;
+}
+#mainbar .signs {
+	text-align: left;
+    margin: 13px 0;
+}
+#mainbar .logo h1, #mainbar .logo h5 {
+    font-size: 24px;
+}
+#mainbar .logo h2 , #mainbar .logo h6 {
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 6px;
+}
+.search_box {
+	margin-top: 14px;
+}
+#searchInput {
+	width: 100%;
+    padding: 12px;
+    outline: none;
+    padding-left: 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.1);
+
+}
+.search_box button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    height: 100%;
+    border: none;
+    background-color: #28353d;
+    color: #fff;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    -o-transition: .2s all;
+    transition: all .2s;
+}
+#mainbar {
+	padding: 16px 0;
+	background: #f0f0f0;
+}
+#progress {
+	height: 4px;
+	background-color: rgb(233, 30, 99);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+/*=======================================================================
+	MenuBar CSS
+=======================================================================*/
+#menubar {
+	background: #547194;
+}
+#menubar ul {
+	text-align: center;
+}
+#menubar ul li {
+	display: inline-block;
+	padding: 15px 0;
+}
+#menubar ul li a {
+    color: #f4f4f4;
+    font-size: 15px;
+    padding: 15px 26px;
+    transition: 0.6s all ease;
+}
+#menubar ul li a:hover , #menubar .current-menu-item a {
+	background: #dadada;
+    color: #547194;
+    transition: 0.6s all ease;
+}
+#menubar .pulse {
+    position: relative;
+    padding-right: 23px;
+    background: #dadada;
+    border-bottom: 1px solid #54719400;
+}
+#menubar .pulse .spinner-grow {
+	position: absolute;
+	top: 18px;
+	right: 4px;
+	background: #e91e636b;
+}
+nav {
+    padding: 0 !important;
+}
+.shifted {
+	position: fixed !important;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+.sticky-header {
+
+}
+/*=======================================================================
+	Hero CSS
+=======================================================================*/
+.header_main-bg {
+    overflow: hidden;
+    background: -webkit-linear-gradient(315deg,#1abc9c 20%,#2980b9 80%);
+    background: -o-linear-gradient(315deg,#1abc9c 20%,#2980b9 80%);
+    background: linear-gradient(135deg,#1abc9c 20%,#2980b9 80%);
+    position: relative;
+    text-align: center;
+}
+.header_main-bg:before {
+    background-position: 50%;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px;
+    background-image: url(assets/img/bg.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400%;
+    width: 100%;
+    display: block;
+    z-index: 0;
+    content: "";
+    opacity: .05;
+    pointer-events: none;
+}
+.header_main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    z-index: 10;
+    position: relative;
+    padding: 60px 0;
+}
+#hero h3 {
+	font-size: 32px;
+	font-weight: 600;
+}
+#hero p {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 48px;
+	width: 1000px;
+	margin: 39px auto;
+}
+#hero .owl-prev , .hero .owl-next {
+	    top: 40%;
+}
+.owl-next {
+	position: absolute;
+    right: 0;
+    top: 41px;
+    font-size: 28px;
+}
+.owl-prev {
+	position: absolute;
+    left: 0;
+    top: 41px;
+    font-size: 28px;
+}
+/*=======================================================================
+	Form CSS
+=======================================================================*/
+#form{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#form .gform_wrapper {margin: 0}
+canvas{
+    background: linear-gradient(135deg,#0f1b19 20%,#003354 80%);
+    height: 600px;
+    width: 100%;
+}
+#form .form {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+#form .form a {
+  color: #fff;
+  border-bottom: 1px dashed;
+  padding-bottom: 5px;
+}
+#form .form input , #form .form select {
+  width: 100%;
+      margin-bottom: 13px;
+}
+#form .form li label , #hero .form li label span {
+	font-size: 12px;
+    color: #fff;
+}
+
+#form .gfield_required {display: none;}
+
+.form .gform_wrapper ul li.gfield {
+    margin-top: 0 !important;
+}
+.form .gform_wrapper .gform_footer {
+    margin-top: 0;
+    padding-top: 0;
+}
+.form .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    padding: 0px 4px !important;
+}
+/*=======================================================================
+	Boxes CSS
+=======================================================================*/
+.single .content h2,.single .content h3 {
+	font-weight: bold;
+    border-right: 3px solid #e91e63;
+    padding-right: 9px;
+    color: #17a2b8;
+    font-size: 18px;
+	margin-top: 18px;
+}
+.single .content ul , .single .content ol  {
+	list-style-type: circle;
+    margin-right: 23px;
+    font-size: 12px;
+    line-height: 30px;
+}
+.single .content li {
+	list-style-type: circle;
+}
+#posts .box span, #posts .box a {
+    color: #666;
+}
+#posts .box {
+    background: #fff;
+    font-size: 12px;
+    margin-bottom: 14px;
+    padding: 9px 10px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(224,224,224,1);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(224,224,224,1);
+    box-shadow: 0px 0px 6px 1px rgba(224,224,224,1);
+}
+#posts .box h3 , #posts .box h2 {
+    padding: 0;
+    margin: 0;
+    line-height: 17px;
+    min-height: 52px;
+    color: #404040;
+    font-size: 14px;
+    overflow: hidden;
+}
+#posts .box h3 a , #posts .box h2 a {
+			color: #404040;
+	    display: block;
+	    text-align: center;
+	    height: 21px;
+	    line-height: 23px;
+	    font-size: 12px;
+	font-weight:bold;
+}
+#posts .box article {
+    text-align: justify;
+    line-height: 30px;
+}
+#posts .box .footerbox {
+    background: #fff;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 10px;
+}
+#posts .box .footerbox ul {
+    text-align: center;
+}
+#posts .box .footerbox ul li {
+    display: inline-block;
+    padding: 0 20px;
+    border-left: 1px solid #d8d8d8;
+}
+#posts .box .footerbox ul li:last-of-type {
+    border: none;
+}
+#posts .webgaran_pagination {
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  font-size: 10px;
+}
+#posts .webgaran_pagination .page-numbers {
+  background: #656565;
+  color: #fff;
+  padding: 8px 14px;
+}
+#posts .webgaran_pagination .dots, #posts .webgaran_pagination .dots:hover {
+  background: transparent !important;
+  color: #656565 !important;
+}
+#posts .webgaran_pagination .current, #posts .webgaran_pagination .page-numbers:hover {
+  background: #313131;
+}
+.newsletter {
+	padding: 20px;
+border: 8px solid transparent;
+border-image: 8 repeating-linear-gradient(-45deg,red 0,red 1em,transparent 0,transparent 2em,#58a 0,#58a 3em,transparent 0,transparent 4em);
+}
+/*=======================================================================
+	Single & Page CSS
+=======================================================================*/
+.webgaran_breadcrumbs {
+	text-align: center;
+	font-size: 12px;
+	height: auto;
+	padding: 12px 2.5%;
+	background: #fff;
+	margin-bottom: 8px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 6px 1px rgba(224,224,224,1);
+	-moz-box-shadow: 0px 0px 6px 1px rgba(224,224,224,1);
+	box-shadow: 0px 0px 6px 1px rgba(224,224,224,1);
+}
+.single .wrapper , .page .wrapper {
+	background: #ecf0f5;
+    padding: 24px 0;
+}
+.single .content , .page .content , .sidebar .content {
+    background: #fff;
+	box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+	-moz-box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+	-webkit-box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+	-ms-box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+	-o-box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+}
+.page .content ul {
+	padding-right: 30px;
+}
+.page .content ul li {
+		list-style: circle;
+    font-size: 13px;
+    line-height: 35px;
+}
+.single .content a {
+	color:#e91e63;
+}
+.webgaran_share {
+    background: #fff;
+    padding: 10px 0;
+}
+.webgaran_share ul li {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.webgaran_share  ul {
+  list-style-type: none;
+  padding: 0;
+}
+.webgaran_share ul li a {
+    display: block;
+    background: #ccc;
+    color: #fff;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 38px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.webgaran_share  .telegram a {
+    background: #6ab0fd;
+}
+.webgaran_share  .twitter a {
+    background: #0088cc;
+}
+.webgaran_share  .facebook a {
+    background: #3e5b98;
+}
+.webgaran_share  .whatsapp a {
+    background: #25D366;
+}
+.webgaran_share  .linkdin a {
+    background: #0e76a8 ;
+}
+.webgaran_share  .like{
+    color: #333;
+    background: #fff;
+    cursor: pointer;
+}
+.webgaran_share  span {
+    background: #d6e0f3;
+    padding: 12px 35px;
+    border-radius: 25px 0 0 25px;
+    -webkit-border-radius: 25px 0 0 25px;
+    -moz-border-radius: 25px 0 0 25px;
+    color: #7b8290;
+    font-family: 'beirut-light';
+    font-size: 18px;
+}
+.webgaran_share  span i {
+    padding-left: 8px;
+}
+.webgaran_like {
+padding-top: 22px;
+}
+.details .info ul li {
+	display: initial;
+	margin-left: 33px;
+	font-size: 13px;
+}
+.details .info ul li i {
+	color: #666;
+	    padding-left: 6px;
+}
+.page .webgaran_form .row {
+  margin-bottom: 12px;
+}
+.page .webgaran_form textarea {
+  width: 92%;
+}
+.page .webgaran_form label , .page .webgaran_form i {
+    font-size: 12px;
+        color: #666;
+}
+/* Sidebar */
+.sidebar .contentside {
+	background: #fff;
+}
+.sidebar .contentside .box-title {
+    border-bottom: 1px solid #eaeaea;
+    padding: 8px 5px 7px 0;
+    text-align: center;
+    margin: 0;
+    background: #547194;
+    font-size: 14px;
+    color: #fff;
+}
+.sidebar .contentside .itemside {
+	width: 100%;
+	display: block;
+	clear: both;
+	height: 87px;
+	border-bottom: 1px solid #eaeaea;
+	padding: 7px 9px;
+}
+.sidebar .contentside .itemside img {
+	width: 75px;
+	padding-right: 5px;
+}
+.sidebar .contentside .itemside:last-of-type {
+	border: 0;
+}
+.sidebar .contentside .itemside .titleside {
+	font-size: 12px;
+	line-height: 23px;
+	padding-top: 7px;
+}
+/* sidebar */
+/* .ratePostBox {
+    position: relative;
+    box-shadow: 0px 6px 5px #000;
+    margin-bottom: 8px;
+}
+.ratePostBox img {
+    width: 100%;
+}
+.ratePostBox h4 {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 12px;
+    z-index: 11;
+    left: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 4px #000000;
+    line-height: 20px;
+}
+.ratePostBox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    -webkit-box-shadow: inset 0px -96px 63px -50px rgba(0,0,0,0.9);
+    -moz-box-shadow: inset 0px -96px 63px -50px rgba(0,0,0,0.9);
+    box-shadow: inset 0px -96px 63px -50px rgba(0,0,0,0.9);
+} */
+.clearBoth {
+    clear: both;
+}
+.listPostBox img {
+    width: 70px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+.listPostBox h4 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.listPostBox h4 a {
+	color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.instagramBox {
+    color: #fff;
+    border: 1px solid #cecece;
+    box-shadow: 0px 1px 4px #C9C9C9;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15pt;
+    padding: 11px;
+    line-height: 40px;
+	background: #f09433;
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.instagramBox a {
+	color: #fff !important;
+	font-size:18px;
+}
+.instagramBox img {
+	float: right;
+	width: 39px !important;
+}
+/* Comment */
+.lefts_shares{float: left;width: 250px;height: 24px;line-height: 24px;}
+.lefts_shares span{width: 80px;float: right;display: inline-block;}
+.lefts_shares ul{width: 140px;float: left;display: block;margin-left: 0;}
+.lefts_shares ul li{list-style-type: none;float: left;margin-right: 3px;width: 24px;height: 24px;}
+.clear_iranthemes{clear: both;padding: 10px 0;}
+.facebook_shares{width: 24px;height: 24px;float: left;
+background: url('assets/img/webgaran-share.png') no-repeat center;background-position: -5px -5px;}
+.googleplus_shares{width: 24px;height: 24px;float: left;
+background: url('assets/img/webgaran-share.png') no-repeat center;background-position: -39px -5px;}
+.linkedin_shares{width: 24px;height: 24px;float: left;
+background: url('assets/img/webgaran-share.png') no-repeat center;background-position: -5px -39px;}
+.telegram_shares{width: 24px;height: 24px;float: left;
+background: url('assets/img/webgaran-share.png') no-repeat center;background-position: -39px -39px;}
+.twitter_shares{width: 24px;height: 24px;float: left;
+background: url('assets/img/webgaran-share.png') no-repeat center;background-position: -73px -5px;}
+/*=======================================================================
+	Template CSS
+=======================================================================*/
+.single-download .webgaran_sidebar {
+	background: #fff;
+	font-size: 12px;
+	    border: 1px solid #e5e5e5;
+}
+.single-download .webgaran_sidebar h3 {
+	text-align: center;
+	    background: #e7e7e7;
+	    padding: 16px 0;
+	    font-size: 13px;
+}
+.single-download .webgaran_sidebar ul {
+		padding: 8px 20px;
+}
+.single-download .webgaran_sidebar li {
+	display: initial;
+}
+.single-download .webgaran_sidebar .last {
+	float: left;
+}
+.single-download .webgaran_sidebar .preview a {
+	width: 90%;
+	padding: 8px 0;
+	display: block;
+	margin-bottom: 7px;
+	text-align: center;
+	border: none;
+	background: #8BC34A;
+	color: #fff;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin: 10px auto;
+}
+.single-download .webgaran_sidebar .download a {
+	width: 90%;
+	padding: 8px 0;
+	display: block;
+	margin-bottom: 7px;
+	text-align: center;
+	border: none;
+	background: #E91E63;
+	color: #fff;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin: 10px auto;
+}
+/*=======================================================================
+	Footer CSS
+=======================================================================*/
+footer {
+    line-height: 2;
+    background: #547194;
+    color: #333;
+    padding: 20px 0;
+    margin-top: 22px;
+}
+.copyright {
+	background: #264973;
+    padding: 11px 0 10px 0;
+	position: relative;
+	color: #fff;
+}
+footer a, footer p, .copyright a {
+	color: #fff !important;
+}
+footer .socials {
+  float: left;
+}
+footer .socials li {
+	display: inline-block;
+}
+footer .socials li a {
+    border: 1px solid #ccc;
+    padding: 6px 10px 4px 11px;
+    color: #f4f4f4;
+}
+footer .socials .telegram a:hover {
+  background: #007ee5;
+  color: #fff;
+}
+footer .socials .instagram a:hover {
+  background: linear-gradient(-35deg,#ed4c67 0,#833471 100%);
+  color: #fff;
+}
+footer .socials .facebook a:hover {
+  background: #3b5998;
+  color: #fff;
+}
+footer .socials .twitter a:hover {
+  background: #00aced;
+  color: #fff;
+}
+footer .socials .feed a:hover {
+  background: #ff8000;
+  color: #fff;
+}
+footer h4 {
+	border-bottom: 1px solid #80d7ff;
+	padding-bottom: 13px;
+	margin-top: 24px;
+	font-size: 14px;
+	position: relative;
+    color: #f4f4f4;
+}
+footer h4:after {
+	content: '';
+	position: absolute;
+	right: 0px;
+	bottom: -3px;
+	width: 5px;
+	height: 5px;
+	background-color: #03A9F4;
+}
+footer h4:before {
+  content: '';
+  position: absolute;
+  right: 9px;
+  bottom: -3px;
+  width: 5px;
+  height: 5px;
+  background-color: #b2dde5;
+}
+footer .webgaran_scroll {
+  margin-top: 25px;
+}
+footer .webgaran_scroll li {
+  font-size: 12px;
+    line-height: 30px;
+    border-bottom: 1px dashed #c0c0c0;
+    padding: 3px 0;
+}
+footer input , .newsletter input {
+	height: 30px !important;
+	font-size: 12px !important;
+}
+footer button , .newsletter button {
+	height: 30px;
+    font-size: 12px;
+    border: 0;
+    background: #e91e63;
+    color: #fff;
+}
+#totop {
+	position: fixed;
+	left: 10px;
+	bottom: 16px;
+	width: 53px;
+	height: 53px;
+	line-height: 60px;
+	overflow: hidden;
+	z-index: 99999999999;
+	text-align: center;
+	background: #E91E63;
+	color: #fff;
+	cursor: pointer;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+/*=======================================================================
+	Archive
+=======================================================================*/
+.archive-desc {
+	background: linear-gradient(90deg,#525252,#3d72b4);
+	color: #fff;
+	height: auto;
+	padding: 50px;
+}
+.archive-desc h1 {
+	font-size: 28px;
+}
+/*=======================================================================
+	404
+=======================================================================*/
+.error404 .wrapper {
+    overflow: hidden;
+    background: -webkit-linear-gradient(315deg,#1abc9c 20%,#2980b9 80%);
+    background: -o-linear-gradient(315deg,#1abc9c 20%,#2980b9 80%);
+    background: linear-gradient(135deg,#1abc9c 20%,#2980b9 80%);
+    position: relative;
+    text-align: center;
+}
+.error404 .message404 {
+    margin: 200px 0;
+    width: 100%;
+}
+.error404 .message404 span.title {
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #fff;
+    text-align: center;
+}
+.error404 .message404 p {
+    margin-top: 30px;
+    color: #fff;
+    line-height: 1.7;
+    text-align: center;
+}
+/*=======================================================================
+	@media
+=======================================================================*/
+@media only screen and (max-width:767px) {
+    #progress {
+        display: none;
+    }
+	#hero p {
+		width: 84%;
+    	font-size: 12px;
+	}
+	#hero h3 {
+    	font-size: 26px;
+	}
+}
+/*=======================================================================
+	Plugins
+=======================================================================*/
+
+#ajaxsearchprores1_1.vertical, #ajaxsearchprores1_2.vertical, div.ajaxsearchpro[id*=ajaxsearchprores1_].vertical {
+    padding: 1px !important;
+    background: #acacac !important;
+}
+
+#wpcomm .wpdiscuz-form-bottom-bar .wpdiscuz-fbb-left .wpdiscuz-stat span , .kk-star-ratings .kksr-legend {
+    font-family: webgaran;
+}
+
+
+.code-snippet {
+    display: block;
+    text-align: left;
+    word-break: break-word;
+    word-wrap: break-word;
+    font-family: Monospace;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.code-snippet code {
+    white-space: pre-wrap;
+    max-height: 494px;
+    padding: 20px;
+}
+.code-snippet .hljs {
+    background-color: #222;
+    color: #fff;
+}
+
+.line-numbers {
+    padding-left: 10px !important;
+    direction: ltr !important;
+}
+
+
+#respond {
+    width: 100%;
+    background: #e6f1ff;
+    padding: 15px 15px;
+    margin-top: 15px;
+    border: 1px solid #c3dcfb;
+}
